@@ -1,0 +1,21 @@
+.contact {
+  margin-top: 260px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  h3 {
+    font-family: Poppins;
+    font-weight: 600;
+    font-size: 48px;
+    line-height: 80px;
+    letter-spacing: 0%;
+  }
+  p {
+    font-family: Poppins;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 30px;
+    letter-spacing: 0%;
+    color: #8F95A5;
+    margin-bottom: 52px;
+  }
+}

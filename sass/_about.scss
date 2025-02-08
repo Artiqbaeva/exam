@@ -20,7 +20,10 @@
   &-img {
     img {
       width: 1600px;
-      height: 500px;
+      height: 500px; 
+    }
+    h3 {
+        display: none;
     }
   }
 }
@@ -53,7 +56,10 @@
 }
 @media (max-width: 1070px) {
   .about {
+    display: grid;
+    grid-template-columns: 1fr;
     &-text {
+        padding: 10px;
       h3 {
         font-family: Poppins;
         font-weight: 500;
@@ -71,7 +77,7 @@
     .about__info {
         display: flex;
         justify-content: flex-start;
-        gap: 102px;
+        gap: 52px;
       }
       
       .about__info-title {
@@ -80,9 +86,11 @@
         font-size: 38px;
         line-height: 80px;
         color: #2a3246;
+  
       }
       
       .about__info-name {
+     
         font-family: Poppins;
         font-weight: 400;
         font-size: 14px;
@@ -92,10 +100,26 @@
       
       .about__info-name,
       .about__info-title {
+      
         display: block;
         text-align: center;
       }
+     
+      &-img{
+        h3{
+            display: block;
+            font-family: Poppins;
+            font-weight: 600;
+            font-size: 48px;
+            line-height: 80px;
+            text-align: center;
+        }
+      }
+      &-text{
+        h3 {
+            display: none;
+        }
   }
-
+  }
 
 }
