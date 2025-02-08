@@ -1,0 +1,101 @@
+.about {
+  display: flex;
+  align-items: center;
+  gap: 160px;
+  &-text {
+    h3 {
+      font-family: Poppins;
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 80px;
+    }
+    p {
+      font-family: Poppins;
+      font-weight: 400;
+      font-size: 20px;
+      line-height: 30px;
+      color: #8f95a5;
+    }
+  }
+  &-img {
+    img {
+      width: 1600px;
+      height: 500px;
+    }
+  }
+}
+.about__info {
+  display: flex;
+  justify-content: flex-start;
+  gap: 162px;
+}
+
+.about__info-title {
+  font-family: Poppins;
+  font-weight: 600;
+  font-size: 48px;
+  line-height: 80px;
+  color: #2a3246;
+}
+
+.about__info-name {
+  font-family: Poppins;
+  font-weight: 400;
+  font-size: 20px;
+  line-height: 30px;
+  color: #8f95a5;
+}
+
+.about__info-name,
+.about__info-title {
+  display: block;
+  text-align: center;
+}
+@media (max-width: 1070px) {
+  .about {
+    &-text {
+      h3 {
+        font-family: Poppins;
+        font-weight: 500;
+        font-size: 36px;
+        line-height: 24px;
+      }
+      p {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 21px;
+        margin-top: 30px;
+      }
+    }
+    .about__info {
+        display: flex;
+        justify-content: flex-start;
+        gap: 102px;
+      }
+      
+      .about__info-title {
+        font-family: Poppins;
+        font-weight: 600;
+        font-size: 38px;
+        line-height: 80px;
+        color: #2a3246;
+      }
+      
+      .about__info-name {
+        font-family: Poppins;
+        font-weight: 400;
+        font-size: 14px;
+        line-height: 30px;
+        color: #8f95a5;
+      }
+      
+      .about__info-name,
+      .about__info-title {
+        display: block;
+        text-align: center;
+      }
+  }
+
+
+}
