@@ -11,25 +11,28 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
+    <link rel="icon" href="assets/hero-bg.svg" />
     <title>Document</title>
   </head>
   <body>
     <header class="container">
       <nav class="navbar">
         <div class="navbar-logo">
-          <img src="./assets/logo.svg" alt="" />
+          <img src="./assets/logo.svg" alt="logo" />
         </div>
         <ul class="navbar-lists">
           <li class="navbar-list"><a href="#" class="navbar-link">Home</a></li>
-          <li class="navbar-list"><a href="" class="navbar-link">Skills</a></li>
           <li class="navbar-list">
-            <a href="" class="navbar-link">About Us</a>
+            <a href="#skills" class="navbar-link">Skills</a>
           </li>
           <li class="navbar-list">
-            <a href="" class="navbar-link">Pricing</a>
+            <a href="#about" class="navbar-link">About Us</a>
           </li>
           <li class="navbar-list">
-            <a href="" class="navbar-link">Contacts</a>
+            <a href="#pricing" class="navbar-link">Pricing</a>
+          </li>
+          <li class="navbar-list">
+            <a href="#contact" class="navbar-link">Contacts</a>
           </li>
         </ul>
         <div class="navbar-menu">
@@ -42,25 +45,28 @@
 
       <div class="container hero">
         <div class="hero-text">
-          <h1>Learn <br />Any Foreign Language</h1>
+          <h1>
+            Learn <br />
+            Any Foreign Language
+          </h1>
           <p>
             With our teachers who write a program for each student, you will be
             able to make your first sketch after the first lesson.
           </p>
-          <img src="./assets/lighting.svg" alt="" />
+          <img src="./assets/lighting.svg" alt="lighting" />
           <button>Get started</button>
         </div>
         <div class="hero-img">
-          <img src="./assets/hero-bg.svg" alt="" />
+          <img src="./assets/hero-bg.svg" alt="girl" />
         </div>
       </div>
     </header>
 
     <main class="container">
       <div class="skills-title">Skills</div>
-      <section class="skills">
+      <section class="skills" id="skills">
         <div class="skills__item">
-          <img src="./assets/speaking.svg" alt="" />
+          <img src="./assets/speaking.svg" alt="speaking" />
           <h2>Speaking</h2>
           <p>
             Improve your English skills and confidence. Live classes and
@@ -71,13 +77,17 @@
           </p>
           <button class="skills-button skills-button1">Learn More</button>
         </div>
-        <div class="skills__item">
-          <img src="./assets/writing.svg" alt="" />
+        <div class="skills__item writing">
+          <img src="./assets/writing.svg" alt="writing" />
           <h2>Writing</h2>
+          <p>
+            One of the most important and extensive areas of natural science,
+            the science that studies substances, also their composition
+          </p>
           <button class="skills-button">Learn More</button>
         </div>
         <div class="skills__item">
-          <img src="./assets/reading.svg" alt="" />
+          <img src="./assets/reading.svg" alt="reading" />
           <h2>Reading</h2>
           <p>
             perception and response actions of the user resulting from the use
@@ -86,7 +96,7 @@
           <button class="skills-button">Learn More</button>
         </div>
         <div class="skills__item number-one">
-          <img src="./assets/listening.svg" alt="" />
+          <img src="./assets/listening.svg" alt="listeing" />
           <div class="">
             <h2>Listening</h2>
             <p>
@@ -98,7 +108,7 @@
         </div>
       </section>
 
-      <section class="about">
+      <section class="about" id="about">
         <div class="about-text">
           <h3>About Us</h3>
           <p>
@@ -128,13 +138,13 @@
         </div>
         <div class="about-img">
           <h3>About Us</h3>
-          <img src="./assets/about-us.svg" alt="" />
+          <img src="./assets/about-us.svg" alt="boy" />
         </div>
       </section>
-
-      <section class="container pricing">
+      <div class="skills-title">Pricing</div>
+      <section class="container pricing" id="pricing">
         <div class="pricing-items">
-          <img src="./assets/self-study.svg" alt="" />
+          <img src="./assets/self-study.svg" alt="online test" />
           <h3>Self-study online course</h3>
           <p>
             Start learning English online in live classes with qualified EC
@@ -145,7 +155,7 @@
           </div>
         </div>
         <div class="pricing-items">
-          <img src="./assets/live (1).svg" alt="" />
+          <img src="./assets/live (1).svg" alt="online class" />
           <br /><br /><br /><br />
           <h3>Live online classes</h3>
           <p>
@@ -158,7 +168,7 @@
           </div>
         </div>
         <div class="pricing-items">
-          <img src="./assets/personal.svg" alt="" />
+          <img src="./assets/personal.svg" alt="personal" />
           <h3>Personal Tuition</h3>
           <p>
             Online one-to-one English tutoring – enjoy our first session for
@@ -172,9 +182,10 @@
         </div>
       </section>
 
-      <section class="container contact">
-        <div class="conyact-img">
-          <img src="./assets/contact-us.svg" alt="" />
+      <section class="container contact" id="contact">
+        <div class="contact-img">
+          <h3>Contact Us</h3>
+          <img src="./assets/contact-us.svg" alt="boy" />
         </div>
         <div class="contact-text">
           <h3>Contact Us</h3>
@@ -183,12 +194,18 @@
             English test.Sign up to our newsletter for learning tips and free
             resources
           </p>
+
           <div class="input-button">
-            <input type="text" placeholder="Enter Your E-mail">
+            <input type="text" placeholder="Enter Your E-mail" />
             <button>Subscribe</button>
           </div>
         </div>
       </section>
     </main>
+
+    <footer class="container footer">
+      <img src="./assets/logo.svg" alt="logo" />
+      <p>Terms and Conditions • Privacy Policy</p>
+    </footer>
   </body>
 </html>

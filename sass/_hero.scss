@@ -8,7 +8,7 @@
     h1 {
       font-family: Poppins;
       font-weight: 600;
-      font-size: 64px;
+      font-size: 74px;
       line-height: 80px;
     }
     p {
@@ -22,7 +22,7 @@
     img {
       position: absolute;
       top: 150px;
-      left: 430px;
+      left: 470px;
     }
     button {
       width: 438px;
@@ -35,6 +35,12 @@
       line-height: 54px;
       background: #263238;
       color: #fff;
+      transition: .6s;
+      &:hover{
+        background: #fff;
+        color: #263238;
+        border: 2px solid $bg-primary;
+      }
     }
   }
 }
@@ -43,9 +49,8 @@
   .hero {
     display: grid;
     grid-template-columns: 1fr 1fr;
-
     margin-top: 45px;
-    text-align: center;
+    text-align: left;
     &-text {
       margin-top: 130px;
       img {
@@ -55,7 +60,7 @@
     h1 {
       font-family: Poppins;
       font-weight: 500;
-      font-size: 34px;
+      font-size: 44px;
       line-height: 45px;
     }
     p {
@@ -76,12 +81,6 @@
       font-size: 16px;
       line-height: 24px;
       margin-top: 20px;
-    }
-    &-text {
-      order: 2;
-    }
-    &-img {
-      order: 1;
     }
   }
 }
@@ -90,9 +89,10 @@
   .hero {
     display: grid;
     grid-template-columns: 1fr;
-    margin-top: 45px;
+    margin-top: 10px;
     text-align: center;
     &-text {
+      margin-top: 20px;
       img {
         display: none;
       }
@@ -100,7 +100,7 @@
     h1 {
       font-family: Poppins;
       font-weight: 500;
-      font-size: 24px;
+      font-size: 28px;
       line-height: 45px;
     }
     p {
@@ -113,7 +113,7 @@
       margin-top: 20px;
     }
     button {
-      width: 289px;
+      width: 200px;
       height: 60px;
       border-radius: 5px;
       font-family: Poppins;
@@ -121,6 +121,7 @@
       font-size: 16px;
       line-height: 24px;
       margin-top: 20px;
+      margin-bottom: 50px;
     }
     &-text {
       order: 2;

@@ -4,6 +4,8 @@
   align-items: center;
   justify-content: space-between;
   margin-top: 40px;
+  height: 90px;
+
   &-lists {
     display: flex;
     gap: 30px;
@@ -14,6 +16,9 @@
     font-weight: 500;
     font-size: 20px;
     line-height: 30px;
+    &:hover{
+      text-decoration: underline;
+    }
   }
   &-button {
     width: 220px;
@@ -25,6 +30,11 @@
     font-weight: 400;
     font-size: 24px;
     line-height: 36px;
+    transition: .6s;
+    &:hover{
+      background: #263238;
+      color: #fff;
+    }
   }
    &-menu{
     display: none;

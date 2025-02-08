@@ -8,7 +8,7 @@
   margin-top: 50px;
   margin-bottom: 50px;
   grid-template-rows: 532px 343px;
-  padding: 0 10px;
+  padding: 0 3px;
   &-button {
     width: 230px;
     height: 60px;
@@ -20,12 +20,21 @@
     font-size: 18px;
     line-height: 27px;
     margin-top: 16px;
+    transition: .6s;
+    &:hover{
+      background: #fff;
+        color: #263238;
+        border: 2px solid $bg-primary;
+    }
+  }
+  .writing p {
+    display: none;
   }
 }
 .skills-button1 {
   margin-top: 66px;
 }
-.number-one {  
+.number-one {
   gap: 50px;
   display: grid;
   grid-template-columns: 1fr 1fr;
@@ -75,23 +84,25 @@
   .skills__item:nth-child(4) {
     grid-column: auto;
   }
-  .number1{
+  .number1 {
     display: flex;
     flex-direction: column;
   }
-  .number-one {  
+  .number-one {
     gap: 50px;
     display: grid;
     grid-template-columns: 1fr;
+  }
+  .writing p {
+    display: flex;
   }
 }
 @media (max-width: 760px) {
   .skills {
     grid-template-columns: 1fr;
     grid-template-rows: repeat(4, auto);
-   
   }
-  .number-one {  
+  .number-one {
     gap: 50px;
     display: grid;
     grid-template-columns: 1fr;
